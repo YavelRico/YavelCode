@@ -304,7 +304,7 @@ body {
     color: #c8b2f5;
     border-radius: 20px;
     padding: 30px 40px;
-    margin: 20px 35% 150px;
+    margin: 20px 35% 200px;
     text-align: center;
     font-size: 25px;
     transition: 0.5s;
@@ -322,8 +322,23 @@ body {
 }
 
 /****HABILIDADES****/
+.skills-container {
+    margin: 0px 20% 200px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 20px;
+}
 
+.skills-container .grid-item img {
+    width: 80px;
+    height: auto;
+    transition: 0.5s;
+}
 
+.skills-container .grid-item img:hover {
+    transform: scale(1.15);
+    filter: brightness(1.15);
+}
 
 /****Seccion del Footer****/
 ul {
@@ -554,13 +569,13 @@ ul {
 }
 
 .style3 span {
-    color: #10adc9;
+    color: #7e00f8;
     background-color: #c8b2f5;
     transition: 0.5s;
 }
 
 .style3 span:hover {
-    color: #8768d4;
+    color: #3cbdd4;
     font-size: 19.2px;
 }
 
