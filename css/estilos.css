@@ -340,6 +340,83 @@ body {
     filter: brightness(1.15);
 }
 
+/****TRABAJOS****/
+.trab {
+    padding: 30px 80px;
+    background-color: #7e00f8;
+    border-radius: 20px;
+    margin: 18px;
+    box-shadow: -15px 15px 4px rgba(0, 0, 0, 0.5);
+    filter: opacity(0.5);
+    transition: 0.5s;
+}
+
+.trab:hover {
+    transform: scale(1.02);
+    box-shadow: -15px 15px 4px rgba(0, 0, 0, 0);
+    filter: opacity(1);
+}
+
+.section-title h2 {
+    border-bottom: #c8b2f5 2px solid;
+    color: #c8b2f5;
+    padding: 10px;
+    margin: 20px 35% 150px;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 35px;
+}
+
+.trab-item {
+    margin-bottom: 40px;
+    background-color: #7e00f8;
+    border-radius: 20px;
+    font-family: "Montserrat";
+    transition: 1s;
+}
+
+.trab-item img {
+    background-color: #ffffff00;
+    width: 100%;
+}
+
+.trab-item .logoexp h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c8b2f5;
+    margin-bottom: 10px;
+    background-color: #7e00f8;
+    font-family: "Montserrat";
+}
+
+.trab-item h4 {
+    font-size: 18px;
+    color: #a952ff;
+    margin-bottom: 5px;
+    background-color: #7e00f8;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.trab-date {
+    font-size: 14px;
+    color: #a952ff;
+    margin-bottom: 15px;
+    background-color: #7e00f8;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.trab-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #c8b2f5;
+    background-color: #7e00f8;
+    font-family: "Montserrat";
+}
+
+
+
 /****Seccion del Footer****/
 ul {
     margin: 0px;
