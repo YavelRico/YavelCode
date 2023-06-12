@@ -56,4 +56,3 @@ function typeSubtext() {
 
 typeHello();
 
-//Botones

@@ -147,18 +147,6 @@ body {
     color: #1e0f3e;
 }
 
-#yavel {
-    width: 350px;
-    border-radius: 30px;
-    transition: 0.5s;
-}
-
-#yavel:hover {
-    transform: scale(1.01);
-    filter: brightness(1.1);
-}
-
-
 /****Texto como codigo***/
 .typewriter {
     text-align: left;
@@ -332,6 +320,9 @@ body {
     text-align: center;
     font-size: 25px;
 }
+
+/****HABILIDADES****/
+
 
 
 /****Seccion del Footer****/
