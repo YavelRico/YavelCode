@@ -64,7 +64,7 @@
 	</div>
 
 
-	<br id="experience"><br ><br><br><br><br ><br><br><br>
+	<br id="experience"><br><br><br><br><br>
 	<section class="experience-section reveal">
 		<div class="seccion-1">
 			<p class="titulo">Experiencia</p>
@@ -73,6 +73,27 @@
 				<p class="boton-cv">Descargar CV</p>
 			</a>
 		</div>
+		<div class="seccion-2" align="center">
+			<div class="slideshow-container" align="center">
+
+				<img src="imagenes/exp1.PNG" style="width:100%" class="mySlides fade">
+				<img src="imagenes/exp2.PNG" style="width:100%" class="mySlides fade">
+				<img src="imagenes/exp3.PNG" style="width:100%" class="mySlides fade">
+				<img src="imagenes/exp4.PNG" style="width:100%" class="mySlides fade">
+
+
+
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+			<div style="text-align:center" class="puntos">
+				<span class="dota" onclick="currentSlide(1)"></span>
+				<span class="dota" onclick="currentSlide(2)"></span>
+				<span class="dota" onclick="currentSlide(3)"></span>
+				<span class="dota" onclick="currentSlide(4)"></span>
+			</div>
+		</div>
+		<br>
 	</section>
 
 	<div class="section-title reveal">
@@ -291,7 +312,58 @@
 
 	<script defer src="fade-in.js"></script>
 	<script src="js/javascript.js"></script>
+	<script>
+		const myCarousel = document.querySelector('.my-carousel');
+		const myCards = myCarousel.querySelectorAll('.my-card');
+		const myArrows = document.querySelectorAll('.my-arrow');
+		const myDotsContainer = document.querySelector('.my-dots');
 
+		let myCurrentIndex = 0;
+		let myInterval;
+
+		// Initialize the carousel
+		function initCarousel() {
+			// Add event listeners to arrows
+			myArrows.forEach((arrow) => {
+				arrow.addEventListener('click', myArrowClick);
+			});
+
+			// Add dots for each card
+			myCards.forEach((card, index) => {
+				const dot = document.createElement('div');
+				dot.classList.add('my-dot');
+				dot.addEventListener('click', () => {
+					goToCard(index);
+				});
+				myDotsContainer.appendChild(dot);
+			});
+
+			// Start the automatic slideshow
+			startSlideshow();
+		}
+
+		// Go to the next card
+		function nextCard() {
+			myCurrentIndex++;
+			if (myCurrentIndex >= myCards.length) {
+				myCurrentIndex = 0;
+			}
+			updateCarousel();
+		}
+
+		// Go to the previous card
+		function prevCard() {
+			myCurrentIndex--;
+			if (myCurrentIndex < 0) {
+				myCurrentIndex = myCards.length - 1;
+			}
+			updateCarousel();
+		}
+
+		// Go to a specific card
+		function goTo
+
+	</script>
 </body>
 
 </html>

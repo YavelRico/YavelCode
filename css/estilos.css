@@ -4,7 +4,7 @@
     text-decoration: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -88,11 +88,11 @@ body {
     column-gap: 10px;
 }
 
-.imagen{
+.imagen {
     padding: 10%;
 }
 
-.imagen img{
+.imagen img {
     width: 400px;
 }
 
@@ -104,13 +104,12 @@ body {
     font-family: "Poppins";
 }
 
-#typewriter-hello{
+#typewriter-hello {
     font-size: 60px;
 }
 
 .typewriter-text,
-.typewriter-subtext 
-.typewriter-subtext2 {
+.typewriter-subtext .typewriter-subtext2 {
     font-family: "Poppins";
     font-size: 40px;
     /* Para evitar saltos de línea */
@@ -148,28 +147,32 @@ body {
 }
 
 /****Experiencia****/
-.experience-section{
+.experience-section {
     display: grid;
     margin: 100px 80px;
     grid-template-columns: 40% 60%;
     column-gap: 10px;
 }
 
-.seccion-1 .titulo{
+.seccion-1 {
+    margin-top: 75px;
+}
+
+.seccion-1 .titulo {
     color: #ecc3f5;
     font-family: "Poppins";
     text-align: center;
     font-size: 60px;
 }
 
-.seccion-1 .descripciones{
+.seccion-1 .descripciones {
     color: #e887ff;
     font-family: "Poppins";
     text-align: center;
     font-size: 22px;
 }
 
-.boton-cv{
+.boton-cv {
     color: #43f7fc;
     font-family: "Poppins";
     text-align: center;
@@ -178,6 +181,79 @@ body {
     margin: 30px 30%;
     border: #43f7fc solid 2px;
     border-radius: 8px;
+}
+
+.slideshow-container {
+    width: 65%;
+}
+
+.slideshow-container img {
+    border-radius: 20px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -60px;
+    color: #43f7fc;
+    font-size: 60px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 45%;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    color: #e887ff;
+}
+
+/* The dots/bullets/indicators */
+.dota {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 20px 15px;
+    border-radius: 50%;
+    background-color: #a923ce;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.puntos .active,
+.dota:hover {
+    background-color: #43f7fc;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /****HABILIDADES****/
