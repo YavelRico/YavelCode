@@ -1,23 +1,31 @@
 /****General****/
 * {
-    background-color: #1e0f3e;
-    font-family: "Montserrat";
+    font-family: "Poppins";
+    text-decoration: none;
+}
+
+a{
     text-decoration: none;
 }
 
 body {
-    background-color: #1e0f3e;
-    background-repeat: repeat;
+    background-image: url("../imagenes/backgr.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     text-decoration: none;
 }
 
 /****Barra de navegacion****/
 .navbar {
     position: fixed;
+    padding-left: 60px;
+    padding-right: 20px;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
+    color: #00000000;
 }
 
 .navbar-brand img {
@@ -25,13 +33,14 @@ body {
 }
 
 .nav-link {
-    color: #c8b2f5;
+    color: #ed9fff;
     transition: 0.2s;
     font-size: 18px;
+    transition: 0.5s;
 }
 
 .nav-link:hover {
-    color: white;
+    color: #43f7fc;
     font-size: 18.5px;
 }
 
@@ -56,14 +65,14 @@ body {
 
 .lang {
     font-size: 35px;
-    color: #c8b2f5;
+    color: #ed9fff;
     margin-right: 30px;
     transition: 0.2s;
 }
 
 .lang:hover {
     font-size: 36px;
-    color: white;
+    color: #43f7fc;
 }
 
 .progr {
@@ -73,103 +82,55 @@ body {
 
 /****INDEX****/
 .intro {
-    margin: 150px 8%;
+    margin: 150px 15%;
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 10px;
 }
 
-.card .front img {
-    width: 550px;
-    height: 550px;
-    border-radius: 20px;
+.imagen{
+    padding: 10%;
 }
 
-.card {
-    width: 550px;
-    height: 550px;
-    perspective: 1000px;
-    border-radius: 20px;
-    background-color: #1e0f3e;
-    transform: perspective(2000px) rotateY(20deg) scale(.8) rotateX(8deg);
-    box-shadow: 0 60px 123px -25px rgba(0, 0, 0, 0.473), 0 35px 75px -35px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
-}
-
-.card:hover {
-    box-shadow: none;
-}
-
-.front,
-.back {
-    position: absolute;
-    width: 550px;
-    height: 550px;
-    backface-visibility: hidden;
-    border-radius: 20px;
-    transition: transform 1s;
-}
-
-.front {
-    z-index: 2;
-}
-
-.back {
-    transform: rotateY(180deg);
-}
-
-.card:hover .front {
-    transform: rotateY(-180deg);
-}
-
-.card:hover .back {
-    transform: rotateY(0deg);
-}
-
-.content {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    background-color: #c8b2f5;
-    transform: rotateY(180deg);
-    border-radius: 20px;
-    color: #3cbdd4;
-}
-
-
-.content h2,
-.content p {
-    transform: rotateY(-180deg);
-    background-color: #c8b2f5;
-}
-
-.content .style3 {
-    color: #1e0f3e;
+.imagen img{
+    width: 400px;
 }
 
 /****Texto como codigo***/
 .typewriter {
     text-align: left;
     margin-top: 150px;
-    color: #7e00f8;
-    font-family: "Kanit";
+    color: #ecc3f5;
+    font-family: "Poppins";
+}
+
+#typewriter-hello{
+    font-size: 60px;
 }
 
 .typewriter-text,
-.typewriter-subtext {
-    font-family: "Kanit";
+.typewriter-subtext 
+.typewriter-subtext2 {
+    font-family: "Poppins";
     font-size: 40px;
     /* Para evitar saltos de línea */
 }
 
 .typewriter-subtext {
-    font-family: "Kanit";
-    margin-top: 10px;
+    font-family: "Poppins";
+    margin-top: 30px;
+    margin-bottom: -2px;
+    font-size: 30px;
+}
+
+.typewriter-subtext2 {
+    font-family: "Poppins";
     font-size: 30px;
 }
 
 .typewriter-underscore {
-    font-family: "Kanit";
+    color: #43f7fc;
+    font-family: "Poppins";
     display: inline-block;
     animation: blink-caret 1s step-end infinite;
 }
@@ -186,139 +147,37 @@ body {
     }
 }
 
-/****BOTONES****/
-.button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.custom-btn {
-    width: 200px;
-    height: 60px;
-    background-color: #1e0f3e;
-    border: 2px solid #c8b2f5;
-    color: #c8b2f5;
-    font-size: 22px;
-    font-family: "Montserrat";
-    margin: 8% 5%;
-    transition: 0.3s;
-}
-
-.custom-btn:hover {
-    transform: scale(1.15);
-    background-color: #c8b2f5cb;
-    border: 2px solid white;
-    color: #ffffff;
-    border-radius: 20px;
-}
-
-.button-space {
-    width: 2%;
-}
-
 /****Experiencia****/
-.carta {
-    padding: 20px;
-    background-color: #7e00f8;
-    border-radius: 20px;
-    margin: 18px;
-    box-shadow: -15px 15px 4px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
+.experience-section{
+    display: grid;
+    margin: 100px 80px;
+    grid-template-columns: 40% 60%;
+    column-gap: 10px;
 }
 
-.carta:hover {
-    transform: scale(1.02);
-    box-shadow: -15px 15px 4px rgba(0, 0, 0, 0);
+.seccion-1 .titulo{
+    color: #ecc3f5;
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 60px;
 }
 
-.section-title h2 {
-    border-bottom: #c8b2f5 2px solid;
-    color: #c8b2f5;
+.seccion-1 .descripciones{
+    color: #e887ff;
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 22px;
+}
+
+.boton-cv{
+    color: #43f7fc;
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 20px;
     padding: 10px;
-    margin: 20px 35% 150px;
-    text-align: center;
-    font-family: "Montserrat";
-    font-size: 35px;
-}
-
-.experience-item {
-    margin-bottom: 40px;
-    background-color: #7e00f8;
-    border-radius: 20px;
-    font-family: "Montserrat";
-    transition: 1s;
-}
-
-.experience-item .logoexp {
-    display: flex;
-    background-color: #7e00f8;
-}
-
-.experience-item .logoexp img {
-    width: 35px;
-    height: 35px;
-    background-color: #7e00f8;
-    margin-right: 15px;
-}
-
-.experience-item .logoexp h3 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #c8b2f5;
-    margin-bottom: 10px;
-    background-color: #7e00f8;
-    font-family: "Montserrat";
-}
-
-.experience-item h4 {
-    font-size: 18px;
-    color: #a952ff;
-    margin-bottom: 5px;
-    background-color: #7e00f8;
-    font-family: "Montserrat";
-    font-weight: bold;
-}
-
-.experience-date {
-    font-size: 14px;
-    color: #a952ff;
-    margin-bottom: 15px;
-    background-color: #7e00f8;
-    font-family: "Montserrat";
-    font-weight: bold;
-}
-
-.experience-description {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #c8b2f5;
-    background-color: #7e00f8;
-    font-family: "Montserrat";
-}
-
-
-.btn {
-    border: solid 2px #c8b2f5;
-    background-color: #1e0f3e;
-    color: #c8b2f5;
-    border-radius: 20px;
-    padding: 30px 40px;
-    margin: 20px 35% 200px;
-    text-align: center;
-    font-size: 25px;
-    transition: 0.5s;
-    margin-top: 40px;
-}
-
-.btn:hover {
-    border: solid 2px #7e00f8;
-    background-color: #7e00f8;
-    color: #c8b2f5;
-    border-radius: 20px;
-    padding: 25px 100px;
-    text-align: center;
-    font-size: 25px;
+    margin: 30px 30%;
+    border: #43f7fc solid 2px;
+    border-radius: 8px;
 }
 
 /****HABILIDADES****/

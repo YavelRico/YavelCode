@@ -23,12 +23,16 @@ reveal();
 //TypeWriter Animation
 const helloElement = document.getElementById('typewriter-hello');
 const subtextElement = document.getElementById('typewriter-subtext');
+const subtextElement2 = document.getElementById('typewriter-subtext2');
+const programacionElement = document.createElement('span');
+const cierreElement = document.createElement('span');
 const underscoreElement = document.createElement('span');
 underscoreElement.classList.add('typewriter-underscore');
 underscoreElement.textContent = '|';
 
 const helloText = ' Hola! ';
-const subtext = '< presiona la imagen para ver más información > ';
+const subtext = '< Bienvenido a mi portafolio';
+const subtext2 = '  profesional de Programación >  ';
 let helloIndex = 0;
 
 function typeHello() {
@@ -49,10 +53,23 @@ function typeSubtext() {
         subtextIndex++;
         setTimeout(typeSubtext, 40); // Ajusta la velocidad de tipeo aquí (en milisegundos)
     } else {
-        subtextElement.appendChild(underscoreElement);
+        typeSubtext2();
+    }
+}
+
+let subtextIndex2 = 0;
+
+function typeSubtext2() {
+    if (subtextIndex2 < subtext2.length) {
+        subtextElement2.textContent += subtext2[subtextIndex2];
+        subtextIndex2++;
+        setTimeout(typeSubtext2, 40); // Ajusta la velocidad de tipeo aquí (en milisegundos)
+    } else {
+        subtextElement2.appendChild(underscoreElement);
         underscoreElement.classList.add('typewriter-underscore-loop');
     }
 }
+
 
 typeHello();
 
