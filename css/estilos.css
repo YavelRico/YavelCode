@@ -439,12 +439,29 @@ body {
 }
 
 /****TRABAJOS****/
+.work-section{
+    margin: 200px 0px;
+}
+
+.work-section .row{
+    margin: 50px 0px;
+}
+
+.boton-work{
+    color: #fdb9ff;
+    text-decoration: none;
+    border: #fdb9ff solid 2px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px 20%;
+}
+
 .trab {
     background: rgb(206, 36, 252);
     background: linear-gradient(47deg, rgba(206, 36, 252, 1) 0%, rgba(38, 95, 201, 1) 67%, rgba(5, 162, 255, 1) 100%);
     border-radius: 20px;
     margin: 20px;
-    padding: 30px 15px;
+    padding: 10px 10px;
     transition: 0.5s;
 }
 
