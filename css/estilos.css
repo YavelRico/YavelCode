@@ -158,14 +158,14 @@ body {
     margin-top: 75px;
 }
 
-.seccion-1 .titulo {
+.titulo {
     color: #ecc3f5;
     font-family: "Poppins";
     text-align: center;
     font-size: 60px;
 }
 
-.seccion-1 .descripciones {
+.descripciones {
     color: #e887ff;
     font-family: "Poppins";
     text-align: center;
@@ -440,34 +440,20 @@ body {
 
 /****TRABAJOS****/
 .trab {
-    padding: 30px 80px;
-    background-color: #7e00f8;
+    background: rgb(206, 36, 252);
+    background: linear-gradient(47deg, rgba(206, 36, 252, 1) 0%, rgba(38, 95, 201, 1) 67%, rgba(5, 162, 255, 1) 100%);
     border-radius: 20px;
-    margin: 18px;
-    box-shadow: -15px 15px 4px rgba(0, 0, 0, 0.5);
-    filter: opacity(0.5);
+    margin: 20px;
+    padding: 30px 15px;
     transition: 0.5s;
 }
 
 .trab:hover {
-    transform: scale(1.02);
-    box-shadow: -15px 15px 4px rgba(0, 0, 0, 0);
-    filter: opacity(1);
-}
-
-.section-title h2 {
-    border-bottom: #c8b2f5 2px solid;
-    color: #c8b2f5;
-    padding: 10px;
-    margin: 20px 35% 150px;
-    text-align: center;
-    font-family: "Montserrat";
-    font-size: 35px;
+    transform: scale(1.04);
 }
 
 .trab-item {
     margin-bottom: 40px;
-    background-color: #7e00f8;
     border-radius: 20px;
     font-family: "Montserrat";
     transition: 1s;
@@ -475,7 +461,7 @@ body {
 
 .trab-item img {
     background-color: #ffffff00;
-    width: 100%;
+    width: 180px;
 }
 
 .trab-item .logoexp h3 {
@@ -483,7 +469,6 @@ body {
     font-weight: bold;
     color: #c8b2f5;
     margin-bottom: 10px;
-    background-color: #7e00f8;
     font-family: "Montserrat";
 }
 
@@ -491,7 +476,6 @@ body {
     font-size: 18px;
     color: #a952ff;
     margin-bottom: 5px;
-    background-color: #7e00f8;
     font-family: "Montserrat";
     font-weight: bold;
 }
@@ -500,7 +484,6 @@ body {
     font-size: 14px;
     color: #a952ff;
     margin-bottom: 15px;
-    background-color: #7e00f8;
     font-family: "Montserrat";
     font-weight: bold;
 }
@@ -509,7 +492,6 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #c8b2f5;
-    background-color: #7e00f8;
     font-family: "Montserrat";
 }
 
